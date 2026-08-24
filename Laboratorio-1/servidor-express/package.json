@@ -1,0 +1,23 @@
+{
+  "name": "servidor-express",
+  "version": "1.0.0",
+  "description": "Ejercicio 2 - Servidor Dinamico con Express + Seguridad",
+  "main": "dist/servidor-express.js",
+  "scripts": {
+    "start": "ts-node src/servidor-express.ts",
+    "dev": "nodemon --exec ts-node src/servidor-express.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "express": "^4.22.2",
+    "express-rate-limit": "^7.5.1",
+    "helmet": "^7.2.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.25",
+    "@types/node": "^20.19.43",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
