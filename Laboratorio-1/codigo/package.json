@@ -1,0 +1,25 @@
+{
+  "name": "lab1-gsw-seccion-a",
+  "version": "1.0.0",
+  "description": "Examen Corto de Laboratorio I - Gestion de Servidores Web",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "estatico": "ts-node src/servidor-estatico.ts",
+    "express": "ts-node src/servidor-express.ts",
+    "estatico:dev": "nodemon --exec ts-node src/servidor-estatico.ts",
+    "express:dev": "nodemon --exec ts-node src/servidor-express.ts"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "ts-node": "^10.9.2",
+    "@types/node": "^20.14.15",
+    "@types/express": "^4.17.21",
+    "nodemon": "^3.1.4"
+  }
+}
