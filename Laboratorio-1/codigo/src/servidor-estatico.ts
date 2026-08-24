@@ -4,11 +4,11 @@ import * as path from "path";
 
 const PORT = 3001;
 
-// Ruta absoluta hacia public/index.html (misma técnica vista en Clase 3)
+
 const INDEX_PATH = path.join(__dirname, "..", "public", "index.html");
 
 const server = http.createServer((req, res) => {
-  // Solo nos interesa servir el index.html para cualquier ruta solicitada
+
   fs.readFile(INDEX_PATH, "utf-8", (err, data) => {
     if (err) {
       res.writeHead(500, { "Content-Type": "text/plain; charset=utf-8" });
